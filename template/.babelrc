@@ -1,0 +1,21 @@
+{
+  "presets": [
+    [
+      "env",
+      {
+        "modules": false
+      }
+    ],
+    "stage-0"
+  ],
+  "plugins": [
+    [
+        "component",
+        {
+            "libraryName": "mint-ui",
+            "style": true
+        },
+        "transform-vue-jsx"
+    ]
+  ]
+}
