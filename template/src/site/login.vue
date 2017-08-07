@@ -1,7 +1,7 @@
 <template>
     <div>
         <div>this is template body</div>
-        <mt-button>button</mt-button>
+        <mt-button @click="login">button</mt-button>
     </div>
 </template>
 <style lang="less" rel="stylesheet/less" scoped>
@@ -17,6 +17,13 @@
         data() {
             return {
                 msg: 'hello vue'
+            }
+        },
+        methods: {
+            login() {
+                this.$api.login().then(_ => {
+                    this.$toast('登录成功');
+                });
             }
         }
     }

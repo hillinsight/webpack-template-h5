@@ -1,7 +1,7 @@
 {
-  "name": "template",
+  "name": "{{ name }}",
   "version": "1.0.0",
-  "description": "",
+  "description": "{{ description }}",
   "private": true,
   "scripts": {
     "dev": "cross-env NODE_ENV=development webpack-dev-server --open --inline --hot",
@@ -9,7 +9,7 @@
     "prod": "cross-env NODE_ENV=production webpack-dev-server --open --inline --hot",
     "build": "cross-env NODE_ENV=production webpack --progress --hide-modules"
   },
-  "author": "",
+  "author": "{{ author }}",
   "devDependencies": {
     "autoprefixer": "^7.1.2",
     "babel-cli": "^6.24.1",
@@ -40,6 +40,7 @@
     "webpack": "^3.4.1",
     "webpack-dashboard": "^0.4.0",
     "webpack-dev-server": "^2.6.1",
+    "webpack-dev-server-mock": "^1.0.1",
     "weinre-webpack": "0.0.8"
   },
   "dependencies": {

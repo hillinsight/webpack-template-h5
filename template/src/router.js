@@ -28,7 +28,7 @@ router.beforeEach(function (to, from, next) {
         document.title = to.meta.title;
     }
     else {
-        document.title = '在线学习平台';
+        document.title = '{{ name }}';
     }
     next();
 });

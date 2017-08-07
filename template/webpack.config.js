@@ -227,7 +227,8 @@ module.exports = {
         compress: true,
         noInfo: true
     },
-    devtool: '#source-map'
+    devtool: '#cheap-module-eval-source-map',
+    // devtool: '#source-map'
     // devtool: 'eval-source-map'
     // devtool: 'eval'
 };
@@ -241,7 +242,7 @@ if (process.env.NODE_ENV !== 'testing') {
     });
 }
 
-const TEST_SERVER = 'http://test-elearning.hillinsight.com/app_dev.php';
+const TEST_SERVER = '{{ server }}';
 
 // 测试环境使用线下测试数据
 if (process.env.NODE_ENV === 'testing') {
